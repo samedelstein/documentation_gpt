@@ -12,13 +12,7 @@ directions_expander.write(
     
     Once you have the key, please paste it on the left hand menu of this app in the text box that say "Add OpenAI API Key here". Assuming they are valid, you'll see a green box  with the text "API credentials valid"
 
-    Next, [download your goodreads list](https://www.goodreads.com/review/import). It may take a few minutes to generate the download.
-
-    Once downloaded, drag and drop or browse for your file. NOTE: This app relies on you having added books to your to-read and read lists.
-
-    Then, you can select the type of book and also filter for the dates when you added books to your to-read list (this let's you force the app to only recommend certain books.)
-
-    Finally, click the "Make Recommendations!" button and the app will take a few seconds to output the name of the book and the reasons why it is being recommended.
+    Next, select a dataset you would like to document. Right now I have it set up so that you should upload the selected dataset, and it should be in a csv format. Maybe in the future I'll add an ability to paste a URL.
     '''
 )
 
