@@ -1,0 +1,39 @@
+```yaml
+name: traffic_violations
+description: A dataset that contains information about traffic violations in a certain location.
+
+columns:
+  X:
+    datatype: float
+    description: Longitude of the location of the violation
+    tests:
+      - name: not_null
+        description: The value cannot be null
+        query: X.isna().sum()
+        expected_result: 0
+
+  Y:
+    datatype: float
+    description: Latitude of the location of the violation
+    tests:
+      - name: not_null
+        description: The value cannot be null
+        query: Y.isna().sum()
+        expected_result: 0
+  
+  violation_number:
+    datatype: object
+    description: The unique identifier assigned to each violation
+    tests:
+      - name: not_null
+        description: The value cannot be null
+        query: violation_number.isna().sum()
+        expected_result: 0
+      - name: unique_values
+        description: Each value must be unique
+        query: len(violation_number.unique())
+        expected_result: len(violation_number)
+ 
+  ... # other columns follow the same structure as above
+
+```

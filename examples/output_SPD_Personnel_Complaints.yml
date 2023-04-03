@@ -1,0 +1,109 @@
+name: Employee Complaints Dataset
+description: A record of employee complaints reported to HR department over a certain period
+
+columns:
+  OBJECTID:
+    datatype: integer
+    tests:
+      - name: unique values
+        description: Make sure each OBJECTID is unique
+        query: SELECT COUNT(*) FROM (SELECT DISTINCT OBJECTID FROM table_name) 
+      - name: not null values
+        description: Make sure there are no null values in OBJECTID column
+        query: SELECT COUNT(*) FROM table_name WHERE OBJECTID IS NULL
+
+  ComplaintDate:
+    datatype: datetime
+    tests:
+      - name: valid format
+        description: Make sure all ComplaintDate values are in valid datetime format
+        query: SELECT COUNT(*) FROM table_name WHERE NOT REGEXP_LIKE(ComplaintDate, '^\d{4}/\d{2}/\d{2} \d{2}:\d{2}:\d{2}\+\d{2}$')      
+
+  Department:
+    datatype: string
+    tests:
+      - name: not null values
+        description: Make sure there are no null values in Department column
+        query: SELECT COUNT(*) FROM table_name WHERE Department IS NULL
+
+  ComplaintType:
+    datatype: string
+    tests:
+      - name: not null values
+        description: Make sure there are no null values in ComplaintType column
+        query: SELECT COUNT(*) FROM table_name WHERE ComplaintType IS NULL
+
+  EmployeeID:
+    datatype: string
+    tests:
+      - name: unique values
+        description: Make sure each EmployeeID is unique
+        query: SELECT COUNT(*) FROM (SELECT DISTINCT EmployeeID FROM table_name) 
+      - name: not null values
+        description: Make sure there are no null values in EmployeeID column
+        query: SELECT COUNT(*) FROM table_name WHERE EmployeeID IS NULL
+
+  EmployeeGender:
+    datatype: string
+    tests:
+      - name: valid values
+        description: Make sure all values in EmployeeGender column are either 'M' or 'F'
+        query: SELECT COUNT(*) FROM table_name WHERE EmployeeGender NOT IN ('M', 'F')
+      - name: not null values
+        description: Make sure there are no null values in EmployeeGender column
+        query: SELECT COUNT(*) FROM table_name WHERE EmployeeGender IS NULL
+
+  ComplaintDetail:
+    datatype: string
+    tests:
+      - name: not null values
+        description: Make sure there are no null values in ComplaintDetail column
+        query: SELECT COUNT(*) FROM table_name WHERE ComplaintDetail IS NULL    
+
+  ActionTaken:
+    datatype: string
+    tests:
+      - name: not null values
+        description: Make sure there are no null values in ActionTaken column
+        query: SELECT COUNT(*) FROM table_name WHERE ActionTaken IS NULL
+
+  OtherActions:
+    datatype: string
+    tests:
+      - name: not null values
+        description: Make sure there are no null values in OtherActions column
+        query: SELECT COUNT(*) FROM table_name WHERE OtherActions IS NULL
+
+  Status:
+    datatype: string
+    tests:
+      - name: not null values
+        description: Make sure there are no null values in Status column
+        query: SELECT COUNT(*) FROM table_name WHERE Status IS NULL
+      - name: valid values
+        description: Make sure all values in Status column are either 'Closed', 'Open' or 'Pending'
+        query: SELECT COUNT(*) FROM table_name WHERE Status NOT IN ('Closed', 'Open', 'Pending')
+
+  AdminReview:
+    datatype: string
+    tests:
+      - name: not null values
+        description: Make sure there are no null values in AdminReview column
+        query: SELECT COUNT(*) FROM table_name WHERE AdminReview IS NULL
+
+  DisciplinaryAction:
+    datatype: string
+    tests:
+      - name: valid values
+        description: Make sure all values in DisciplinaryAction column are in the expected list of actions
+        query: SELECT COUNT(*) FROM table_name WHERE DisciplinaryAction NOT IN ('Verbal Warning', 'Written Warning', 'Suspension', 'Termination', 'None', 'Retraining')
+
+  NonDisciplinaryAction:
+    datatype: string
+    tests:
+      - name: not null values
+        description: Make sure there are no null values in NonDisciplinaryAction column
+        query: SELECT COUNT(*) FROM table_name WHERE NonDisciplinaryAction IS NULL
+      - name: valid values
+        description: Make sure all values in NonDisciplinaryAction column are in the expected list of actions
+        query: SELECT COUNT(*) FROM table_name WHERE NonDisciplinaryAction NOT IN ('Verbal Counseling', 'Written Counseling', 'Retraining', 'None')

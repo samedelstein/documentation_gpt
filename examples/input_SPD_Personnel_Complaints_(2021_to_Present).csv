@@ -1,0 +1,108 @@
+﻿OBJECTID,ComplaintDate,ClosureDate,ReceivedBy,ComplaintsNum,AllegationsMadeNum,AllegationsMade,AllegationsSustained,NumOfficersSustained,AllegationsUnfounded,AllegationsUnsubstantiated,NumOfficersDA,DisciplinaryAction,NonDisciplinaryAction
+1,2021/02/01 00:00:00+00,Open,CRB,1,1,Fail to Act,,,,,,,
+2,2021/02/25 00:00:00+00,Open,CRB,1,Numerous,Unlawful Search,,,,,,,
+3,2021/02/18 00:00:00+00,4/5/2021,SPD,1,1,Other    ,No,0,1,0,0,None,None
+4,2021/03/02 00:00:00+00,10/12/2021,CRB,1,1,Harassment,No,0,0,1,0,None,None
+5,2021/03/02 00:00:00+00,6/14/2022,CRB,1,1,Demeanor,1,1,0,0,1,Written Reprimand,None
+6,2021/03/08 00:00:00+00,10/11/2021,SPD,1,1,Harassment,1,1,0,0,1,Suspended 5 days,None
+7,2021/02/25 00:00:00+00,7/13/2021,SPD,1,3,Demeanor,0,0,0,1,1,None,Verbal Counseling
+8,2021/03/17 00:00:00+00,Open,CRB,1,4,Excessive Force,,,,,,,
+9,2021/04/07 00:00:00+00,6/28/2021,SPD,1,1,Excessive Force,0,0,0,1,0,None,None
+10,2021/04/20 00:00:00+00,Open,CRB,1,3,Other    ,,,,,,,
+11,2021/04/28 00:00:00+00,Open,CRB,1,1,Demenar,,,,,,,
+12,2021/04/28 00:00:00+00,4/6/2022,CRB,1,2,False Arrest,0,0,1,0,0,None,None
+13,2021/05/13 00:00:00+00,Open,CRB,1,2,Excessive Force,,,,,,,
+14,2021/05/13 00:00:00+00,12/1/2021,CRB,1,3,Fail to Act,0,0,0,1,1,None,Verbal Counseling
+15,2021/05/20 00:00:00+00,Open,CRB,1,1,Other    ,,,,,,,
+16,2021/05/21 00:00:00+00,10/21/2021,SPD,1,1,Viol. Rules & Reg,1,0,1,0,0,None,None
+17,2021/05/26 00:00:00+00,Open,CRB,1,1,Fail to Act,,,,,,,
+18,2021/07/07 00:00:00+00,9/16/2021,SPD,1,1,Fail to Act,0,1,0,1,0,None,None
+19,2021/07/09 00:00:00+00,Open,CRB,1,3,Fail to Act,,,,,,,
+20,2021/06/16 00:00:00+00,10/28/2021,CRB,1,1,Fail To Act,1,1,0,0,1,None (expired),none
+21,2021/06/04 00:00:00+00,8/2/2021,SPD,1,1,False Arrest,0,0,0,1,0,None,None
+22,2021/06/25 00:00:00+00,8/18/2021,SPD,1,2,Fail to Act,0,0,0,1,0,None,None
+23,2021/07/12 00:00:00+00,8/3/2021,SPD,1,1,Viol. Rules & Reg,0,0,0,1,0,None,None
+24,2021/07/15 00:00:00+00,11/24/2021,SPD,1,1,Harassment,1,2,0,0,2,Suspension 5 days,Written Reprimand
+25,2021/07/20 00:00:00+00,9/13/2021,CRB,1,1,Other    ,0,0,0,1,0,None,None
+26,2021/07/21 00:00:00+00,Open,CRB,1,1,Demeanor,,,,,,,
+27,2021/07/27 00:00:00+00,8/9/2021,SPD,1,1,Excessive Force,1,1,0,1,0,None,None
+28,2021/07/26 00:00:00+00,9/16/2021,SPD,1,2,Other    ,0,0,1,0,0,None,None
+29,2021/08/05 00:00:00+00,12/10/2021,SPD,1,2,Excessive Force,0,0,0,1,0,None,None
+30,2021/08/05 00:00:00+00,5/15/2022,SPD,1,2,Excessive Force,0,0,1,0,0,None,None
+31,2021/08/17 00:00:00+00,5/16/2022,SPD,1,1,False Arrest,0,0,0,1,0,None,None
+32,2021/09/02 00:00:00+00,10/13/2021,CRB,1,5,Unlawful Search,0,5,1,0,0,None,None
+33,2021/07/28 00:00:00+00,1/3/2022,SPD,1,1,Failure to Act,0,0,1,0,0,None,None
+34,2021/09/08 00:00:00+00,10/21/2021,CRB,1,1,Other    ,0,0,1,0,0,None,None
+35,2021/10/21 00:00:00+00,Open,CRB,1,2,Viol. Rules & Reg,,,,,,,
+36,2021/10/26 00:00:00+00,12/2/2021,SPD,1,1,Fail to Act,0,0,0,0,0,None,None
+37,2021/10/26 00:00:00+00,5/3/2022,SPD,1,2,Excessive force,2,2,0,1,3,"5 day Suspension, written reprimand (2), verbal couseling, re-training",
+38,2021/10/03 00:00:00+00,2/8/2022,SPD,1,1,Other-Traffic,0,1,1,0,0,None,None
+39,2021/10/03 00:00:00+00,2/8/2022,SPD,1,1,Other-Proprty,0,0,1,0,0,None,None
+40,2021/11/17 00:00:00+00,5/19/2022,CRB,1,2,Viol. Rules & Reg,0,0,0,1,0,None,None
+41,2021/12/07 00:00:00+00,7/4/2022,SPD,1,3,Fail To Act,0,0,0,1,0,None,None
+42,2021/12/09 00:00:00+00,3/9/2022,SPD,1,3,Demeanor,0,0,1,0,0,None,None
+43,2021/12/28 00:00:00+00,Open,SPD,1,3,False Arrest,,,,,,,
+44,1/4/2022,Open @CRB,SPD,1,2,Excessive Force,,,,,,,
+45,1/4/2022,Open @CRB,CRB,1,2,Fail to Act,,,,,,,
+46,1/7/2022,3/10/2022,CRB,1,3,Unlawful Search,Unfounded,0,1,0,0,None,None
+47,1/7/2022,Open @CRB,CRB ,1,5,Excessive Force,,,,,,,
+48,1/19/2022,Open@CRB,CRB,1,1,Excessive Force,,,,,,,
+49,1/19/2022,Open@CRB,CRB,1,1,Excessive Force,,,,,,,
+50,1/25/2022,Open@ CHF,CRB,1,1,Excessive Force,,,,,,,
+51,2/1/2022,Open@CRB,CRB,1,Unknown,Fail to Act,,,,,,,
+52,2/8/2022,Open@Chf,SPD,1,1,Demeanor,,,,,,,
+53,2/8/2022,Open@CRB,SPD,1,1,False Arrest,,,,,,,
+54,2/15/2022,9/24/2022,SPD,3,4,Fail to Act,,,,,,,
+55,2/18/2022,6/14/2022,CRB,1,1,Other (Traffic),0,0,0,1,1,none,Verbal Counseling
+56,3/9/2022,Open@CRB,CRB,1,2,False Arrest,,,,,,,
+57,3/9/2022,7/22/2022,CRB,1,2,False Arrest,,,,,,,
+58,3/22/2022,5/11/2022,CRB,1,2,Other     ,No,0,1,0,0,none,none
+59,4/5/2022,Open at Chf,CRB,1,1,Other-car crash,,,,,,,
+60,4/6/2022,5/23/2022,CRB,1,2,False Arrest,0,0,1,0,0,none,none
+61,4/11/2022,Open,CRB,1,1,Fail to Act,,,,,,,
+62,4/24/2022,5/31/2022,SPD,1,2,Fail to Act,0,0,0,1,0,none,none
+63,4/18/2022,6/16/2022,SPD,1,3,Excessive Force,0,0,0,1,1,none,Verbal Counseling
+64,5/4/2022,Open,SPD,1,numerous,False Arrest,,,,,,,
+65,5/11/2022,Open,SPD,1,3,Harassment,,,,,,,
+66,5/11/2022,7/1/2022,SPD,1,1,Harassment,0,0,1,0,0,None,None
+67,5/16/2022,Open,CRB,1,2,Demeanor,,,,,,,
+68,5/17/2022,Open,CRB,1,2,Excessive Force,,,,,,,
+69,5/19/2022,Open,CRB,1,2,Demeanor,,,,,,,
+70,5/22/2022,Open,CRB,1,1,Demeanor,,,,,,,
+71,6/13/2022,10/10/2022,SPD,1,2,Fail to Act,0,0,1,0,0,None,None
+72,6/16/2022,Open,CRB,1,1,Excessive Force,,,,,,,
+73,6/5/2022,Open at chf,CRB,1,1,Harassment,,,,,,,
+74,7/11/2022,Open,SPD,1,1,Unlawful arrest,,,,,,,
+75,7/14/2022,10/10/2022,SPD,1,5,Harrassment,0,0,1,0,0,None,None
+76,7/18/2022,Open,CRB,1,2,Harassment,,,,,,,
+77,8/17/2022,12/3/2022,CRB,1,1,False Arrest,0,1,1,0,0,None,None
+78,8/17/2022,Open,CRB,1,1,Fail to Act,,,,,,,
+79,8/25/2022,10/14/2022,SPD,1,1,Demeanor,1,1,0,0,1,Written Reprimand,
+80,8/24/2022,Open,CRB,1,1,Fail to Act,,,,,,,
+81,8/26/2022,Open,CRB,1,2,Demeanor,,,,,,,
+82,8/31/2022,Open,CRB,1,2,Demenaor,,,,,,,
+83,8/31/2022,Open,CRB,1,1,Fail to Act,,,,,,,
+84,8/31/2022,Open,CRB,1,2,Demenaor,,,,,,,
+85,9/13/2022,Open,CRB,1,3,Fail to Act,,,,,,,
+86,9/13/2022,Open,SPD,1,numerous,Harassment,,,,,,,
+87,9/13/2022,12/3/2022,SPD,1,2,False Arrest,0,0,0,1,0,None,None
+88,9/13/2022,Open,SPD,1,1,Fail to Act,,,,,,,
+89,9/6/2022,Open,SPD,1,2,Excessive Force,,,,,,,
+90,9/20/2022,Open,SPD,1,3,Other,,,,,,,
+91,9/22/2022,Open,CRB,1,1,Demeanor,,,,,,,
+92,10/3/2022,Open,CRB,1,1,False Arrest,,,,,,,
+93,9/26/2022,Open,CRB,1,1,False Arrest,,,,,,,
+94,9/26/2022,Open,CRB,1,1,Fail to Act,,,,,,,
+95,10/3/2022,Open,SPD,1,1,False Arrest,,,,,,,
+96,10/19/2022,Open,CRB,1,1,Fail to Act,,,,,,,
+97,10/27/2022,Open,CRB,1,1,False Arrest,,,,,,,
+98,11/28/2022,Open,SPD,1,2,Harassment,,,,,,,
+99,11/8/2022,Open,CRB,1,1,Excessive Force,,,,,,,
+100,11/1/2022,Open,CRB,1,1,Harassment,,,,,,,
+101,11/15/2022,Open,CRB,1,1,Excessive Force,,,,,,,
+102,11/15/2022,Open,CRB,1,1,False Arrest,,,,,,,
+103,11/28/2022,Open,SPD,1,1,Fail to Act,,,,,,,
+104,12/7/2022,Open,CRB,1,1,Policy Violation,,,,,,,
+105,12/12/2022,Open,CRB,1,1,Excessive Force,,,,,,,
+106,12/19/2022,Open,CRB,1,1,Fail to Act,,,,,,,
+107,12/16/2022,Open,CRB,1,1,Fail to Act,,,,,,,

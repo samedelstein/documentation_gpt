@@ -1,0 +1,239 @@
+Name: book_catalogue
+Description: A dataset containing information on books, including title, authors, publication date, format, and ratings.
+
+Columns:
+  - Book Id:
+      Description: Unique identifier for each book in the catalogue.
+      DataType: Integer
+      Tests:
+        - Name: "NoDuplicateValues"
+          Description: "Ensure there are no duplicate values in the column" 
+          Test: "assert df['Book Id'].nunique() == len(df['Book Id'])"
+        - Name: "NotNullValues"
+          Description: "Ensure there are no null values in the column"
+          Test: "assert pd.notnull(df['Book Id']).all()"
+
+  - Title:
+      Description: The title of the book.
+      DataType: String
+      Tests:
+        - Name: "NotEmptyStrings"
+          Description: "Ensure there are no empty string values in the column"
+          Test: "assert (df.Title != '').all()"
+        - Name: "UniqueCount"
+          Description: "Ensure there are no duplicate values in the column"
+          Test: "assert df.Title.nunique() == len(df.Title)"
+
+  - Authors:
+      Description: The author(s) of the book.
+      DataType: String
+      Tests:
+        - Name: "NotEmptyStrings"
+          Description: "Ensure there are no empty string values in the column"
+          Test: "assert (df.Authors != '').all()"
+        - Name: "UniqueCount"
+          Description: "Ensure there are no duplicate values in the column"
+          Test: "assert df.Authors.nunique() == len(df.Authors)"
+
+  - Publication Date:
+      Description: The date the book was published.
+      DataType: String
+      Tests:
+        - Name: "NotEmptyStrings"
+          Description: "Ensure there are no empty string values in the column"
+          Test: "assert (df['Publication Date'] != '').all()"
+        - Name: "DateFormat"
+          Description: "Ensure values conform to date format YYYY-MM-DD"
+          Test:  "assert pd.to_datetime(df['Publication Date'], errors='coerce').notnull().all()"
+
+  - Number of Pages:
+      Description: The number of pages in the book.
+      DataType: Integer
+      Tests:
+        - Name: "NotNullValues"
+          Description: "Ensure there are no null values in the column"
+          Test: "assert pd.notnull(df['Number of Pages']).all()"
+        - Name: "PositiveIntegers"
+          Description: "Ensure all values are positive integers"
+          Test: "assert df['Number of Pages'].apply(lambda x: isinstance(x, int) and x >= 0).all()"
+
+  - Fiction:
+      Description: Indicates if the book is a work of fiction.
+      DataType: Boolean
+      Tests:
+        - Name: "NotNullValues"
+          Description: "Ensure there are no null values in the column"
+          Test: "assert pd.notnull(df['Fiction']).all()"
+
+  - Rating:
+      Description: The overall rating of the book on Goodreads.
+      DataType: Float
+      Tests:
+        - Name: "NotNullValues"
+          Description: "Ensure there are no null values in the column"
+          Test: "assert pd.notnull(df['Rating']).all()"
+        - Name: "RatingRange"
+          Description: "Ensure all values are between 0 and 5"
+          Test: "assert df['Rating'].apply(lambda x: isinstance(x, float) and 0 <= x <= 5).all()"
+
+  - Rating Count:
+      Description: The total number of ratings the book has received on Goodreads.
+      DataType: Integer
+      Tests:
+        - Name: "NotNullValues"
+          Description: "Ensure there are no null values in the column"
+          Test: "assert pd.notnull(df['Rating Count']).all()"
+        - Name: "PositiveIntegers"
+          Description: "Ensure all values are positive integers"
+          Test: "assert df['Rating Count'].apply(lambda x: isinstance(x, int) and x >= 0).all()"
+
+  - Review Count:
+      Description: The total number of reviews the book has received on Goodreads.
+      DataType: Integer
+      Tests:
+        - Name: "NotNullValues"
+          Description: "Ensure there are no null values in the column"
+          Test: "assert pd.notnull(df['Review Count']).all()"
+        - Name: "PositiveIntegers"
+          Description: "Ensure all values are positive integers"
+          Test: "assert df['Review Count'].apply(lambda x: isinstance(x, int) and x >= 0).all()"
+
+  - Five Star Ratings:
+      Description:  The number of five-star ratings the book has received on Goodreads.
+      DataType: Integer
+      Tests:
+        - Name: "NotNullValues"
+          Description: "Ensure there are no null values in the column"
+          Test: "assert pd.notnull(df['Five Star Ratings']).all()"
+        - Name: "RatingCountEquality"
+          Description: "Ensure value is less than or equal to total number of ratings"
+          Test: "assert (df['Five Star Ratings'] <= df['Rating Count']).all()"
+
+  - Four Star Ratings:
+      Description: The number of four-star ratings the book has received on Goodreads.
+      DataType: Integer
+      Tests:
+        - Name: "NotNullValues"
+          Description: "Ensure there are no null values in the column"
+          Test: "assert pd.notnull(df['Four Star Ratings']).all()"
+        - Name: "RatingCountEquality"
+          Description: "Ensure value is less than or equal to total number of ratings"
+          Test: "assert (df['Four Star Ratings'] <= df['Rating Count']).all()"
+
+  - Three Star Ratings:
+      Description: The number of three-star ratings the book has received on Goodreads.
+      DataType: Integer
+      Tests:
+        - Name: "NotNullValues"
+          Description: "Ensure there are no null values in the column"
+          Test: "assert pd.notnull(df['Three Star Ratings']).all()"
+        - Name: "RatingCountEquality"
+          Description: "Ensure value is less than or equal to total number of ratings"
+          Test: "assert (df['Three Star Ratings'] <= df['Rating Count']).all()"
+
+  - Two Star Ratings:
+      Description: The number of two-star ratings the book has received on Goodreads.
+      DataType: Integer
+      Tests:
+        - Name: "NotNullValues"
+          Description: "Ensure there are no null values in the column"
+          Test: "assert pd.notnull(df['Two Star Ratings']).all()"
+        - Name: "RatingCountEquality"
+          Description: "Ensure value is less than or equal to total number of ratings"
+          Test: "assert (df['Two Star Ratings'] <= df['Rating Count']).all()"
+
+  - One Star Ratings:
+      Description: The number of one-star ratings the book has received on Goodreads.
+      DataType: Integer
+      Tests:
+        - Name: "NotNullValues"
+          Description: "Ensure there are no null values in the column"
+          Test: "assert pd.notnull(df['One Star Ratings']).all()"
+        - Name: "RatingCountEquality"
+          Description: "Ensure value is less than or equal to total number of ratings"
+          Test: "assert (df['One Star Ratings'] <= df['Rating Count']).all()"
+
+  - Format:
+      Description: The format in which the book was published.
+      DataType: String
+      Tests:
+        - Name: "NotEmptyStrings"
+          Description: "Ensure there are no empty string values in the column"
+          Test: "assert (df.Format != '').all()"
+        - Name: "UniqueCount"
+          Description: "Ensure there are no duplicate values in the column"
+          Test: "assert df.Format.nunique() == len(df.Format)"
+
+  - Publisher:
+      Description: The publisher of the book.
+      DataType: String
+      Tests:
+        - Name: "NotEmptyStrings"
+          Description: "Ensure there are no empty string values in the column"
+          Test: "assert (df.Publisher != '').all()"
+        - Name: "UniqueCount"
+          Description: "Ensure there are no duplicate values in the column"
+          Test: "assert df.Publisher.nunique() == len(df.Publisher)"
+
+  - ISBN:
+      Description: The ISBN (International Standard Book Number) of the book.
+      DataType: String
+      Tests:
+        - Name: "NoDuplicateValues"
+          Description: "Ensure there are no duplicate values in the column" 
+          Test: "assert df.ISBN.nunique() == len(df.ISBN)"
+        - Name: "NotNullValues"
+          Description: "Ensure there are no null values in the column"
+          Test: "assert pd.notnull(df.ISBN).all()"
+
+  - ISBN13:
+      Description: The 13-digit ISBN of the book.
+      DataType: String
+      Tests:
+        - Name: "NoDuplicateValues"
+          Description: "Ensure there are no duplicate values in the column" 
+          Test: "assert df.ISBN13.nunique() == len(df.ISBN13)"
+        - Name: "NotNullValues"
+          Description: "Ensure there are no null values in the column"
+          Test: "assert pd.notnull(df.ISBN13).all()"
+
+   - Original Title:
+      Description: The original title of the book (if book was originally published in a language other than English).
+      DataType: String
+      Tests:
+        - Name: "NoDuplicateValues"
+          Description: "Ensure there are no duplicate values in the column"
+          Test: "assert df['Original Title'].nunique() == len(df['Original Title'])"
+
+  - Edition Language:
+      Description: The language in which the book was published.
+      DataType: String
+      Tests:
+        - Name: "NotEmptyStrings"
+          Description: "Ensure there are no empty string values in the column"
+          Test: "assert (df['Edition Language'] != '').all()"
+        - Name: "UniqueCount"
+          Description: "Ensure there are no duplicate values in the column"
+          Test: "assert df['Edition Language'].nunique() == len(df['Edition Language'])"
+
+  - Read Count:
+      Description: The number of times the book has been marked as read by Goodreads users.
+      DataType: Integer
+      Tests:
+        - Name: "NotNullValues"
+          Description: "Ensure there are no null values in the column"
+          Test: "assert pd.notnull(df['Read Count']).all()"
+        - Name: "PositiveIntegers"
+          Description: "Ensure all values are positive integers"
+          Test: "assert df['Read Count'].apply(lambda x: isinstance(x, int) and x >= 0).all()"
+
+  - Owned Copies:
+      Description: The number of copies of the book owned by the Goodreads user.
+      DataType: Integer
+      Tests:
+        - Name: "NotNullValues"
+          Description: "Ensure there are no null values in the column"
+          Test: "assert pd.notnull(df['Owned Copies']).all()"
+        - Name: "PositiveIntegers"
+          Description: "Ensure all values are positive integers"
+          Test: "assert df['Owned Copies'].apply(lambda x: isinstance(x, int) and x >= 0).all()"
